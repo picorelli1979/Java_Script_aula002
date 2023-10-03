@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AULA DE JS</title>
+
+<style>
+      body{
+          background-color: red;
+          color: white;
+    }
+</style>
+
+</head>
+<body>
+      <script>
+         
+        const usuarios = {
+            1:{log: "Fabricio", psw: '1111', nivel1: 'JUNIOR'},
+            2:{log: "Jamile", psw: '2222', nivel2: 'MÉDIO'},
+            3:{log: "Micael", psw: '3333', nivel3: 'ADMINISTRADOR'}
+        }
+        
+         let login = prompt('DIGITE SUE LOGIN: ? ')
+         let password = prompt('DIGITE PASSWORD: ? ')
+                 
+
+        if(usuarios[1].log === login && usuarios[1].psw === password){
+           document.write("SEU NIVEL É : " + usuarios[1].nivel1); 
+        }    
+        else if(usuarios[2].log === login && usuarios[2].psw === password){
+            document.write("SEU NIVEL É : " + usuarios[2].nivel2); 
+        }
+        else if(usuarios[3].log === login && usuarios[3].psw === password){
+            document.write("SEU NIVEL É : " + usuarios[3].nivel3); 
+        }
+        else{ document.write("SEU LOGIN OU SENHA SÃO INVÁLIDOS")}
+        
+            
+      </script>
+</body>
+</html>
